@@ -7,9 +7,8 @@ from wordcloud import WordCloud, STOPWORDS
 from  functions import Creat_Data_Frame , Whatdata
 uploaded_file=st.sidebar.file_uploader("Choose WhatApp txt file")
 if uploaded_file is not None:
-    text_data=open(uploaded_file.name,"r").read()
-#    st.write(text_data)
-
+    text_data=uploaded_file.getvalue()
+    text_data=text_data.decode('utf-8')
         
 
     data=Creat_Data_Frame(text_data)
