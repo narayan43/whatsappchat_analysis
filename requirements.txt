@@ -1,7 +1,0 @@
-matplotli
-streamlit
-plotly
-wordcloud
-emoji
-pandas
-numpy
